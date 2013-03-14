@@ -36,9 +36,13 @@
 
 ### 方法二，使用 curl 访问 dnspod 的接口 (此方法来自 <https://gist.github.com/chuangbo/833369>)
 
-获得domain_id 可以用curl curl -k https://dnsapi.cn/Domain.List -d "login_email=xxx&login_password=xxx"
+获得 `domain_id`
 
-获得record_id 类似 curl -k https://dnsapi.cn/Record.List -d "login_email=xxx&login_password=xxx&domain_id=xxx"
+    curl -k https://dnsapi.cn/Domain.List -d "login_email=xxx&login_password=xxx"
+
+获得 `record_id`
+    
+    curl -k https://dnsapi.cn/Record.List -d "login_email=xxx&login_password=xxx&domain_id=xxx"
 
 ## 使用
 
